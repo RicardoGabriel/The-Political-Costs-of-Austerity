@@ -1,0 +1,11 @@
+		(1)	(2)	(3)
+VARIABLES	LABELS	Alesina4_dif	F0Far_share_dif	F0pcGOV_dif
+				
+Constant	Constant	0.08***	1.88***	2.84***
+		[20.815]	[29.903]	[58.358]
+				
+Observations		1,451	1,980	3,712
+R-squared		0.000	0.000	0.000
+N_full		.	.	.
+t-statistics in brackets				
+*** p<0.01, ** p<0.05, * p<0.1				
