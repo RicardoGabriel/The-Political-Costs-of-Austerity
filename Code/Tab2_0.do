@@ -1,6 +1,3 @@
-				*** 8_0_Tab2.do ***
-
-* Baseline
 
 * number of lags
 local MaxLPLags 2
@@ -11,9 +8,9 @@ local inst = "$inst"
 
 use "${hp}Data\Out\Data_Final_nuts${nu}.dta", clear
 
-
 *to have the same sample when looking at real and political variables
 drop if Far_share==.
+
  
 ********************************************************************************
 *Step 1)					DATA PREPARATION
@@ -77,10 +74,7 @@ foreach lhsvar in `lhsvarlist'   {/*LHS variable: `lhsvarlist' */
 	*** Baseline LP table Using IV
 	* One regression for each horizon of the response (0-4 years)
 	forvalues i = 0/`horizon' {
-		local ord = `i' + 1 			// ord='i'+1 in ivreg2 is equivalent to ord='i' in xtscc (check "help ivreg2")
-		if (("`lhsvar'" == "pcGOV") & `i' ==0){
-			local ord = 0
-		}
+
 		
 		
 		* LP regression	

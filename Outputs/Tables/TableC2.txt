@@ -1,13 +1,13 @@
 		(1)
 VARIABLES	LABELS	% of regional average per capita gov. spendings
 		
-average	average	-0.01
-		[-0.517]
-Constant	Constant	0.98***
-		[42.380]
+average	average	-0.02
+		[-0.690]
+Constant	Constant	0.99***
+		[42.829]
 		
 Observations		126
-R-squared		0.002
+R-squared		0.004
 Year FE		N
 Region FE		N
 Cluster Region		N

@@ -41,12 +41,12 @@ gen Event2				= 25 if  `inst1' >= 0
 
 
 * Graph Total Share
-twoway (bar Event1 Year, fcolor(gs12) lwidth(none) xlabel(1980(5)2015)) ///
+twoway (bar Event1 Year, fcolor(black%20) lwidth(none) xlabel(1980(5)2015)) ///
 (line Far_share Year, ylabel(0(5)25) lcolor(black) lwidth(medthick)) ///
 (line Mean_Far_share Year, lcolor(black) lpattern("-")) ///
-(rarea zero Far_Right_share Year, color(red%40)) ///
-(rarea Far_Right_share Far_share Year, color(blue%40)), ///
+(rarea zero Far_Right_share Year, color(black%95)) ///
+(rarea Far_Right_share Far_share Year, color(black%50)), ///
 legend(order(4 "Vote share far right, %" ///
 3 "Average vote share far parties, %" 5 "Vote share far left, %" ///
 1 "Episodes of extreme austerity") cols(2))
-graph export "$Fig\Fig1.eps", replace
+graph export "$Fig\Fig1.pdf", replace

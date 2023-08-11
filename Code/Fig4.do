@@ -125,7 +125,7 @@ foreach lhsvar in `lhsvarlist'   {/*LHS variable: `lhsvarlist' */
 		graphregion(color(white)) plotregion(color(white)) legend(off)
 
 		graph export "$Fig\Fig4.eps", replace
-		graph export "$Fig\Fig7a.eps", replace
+		graph export "$Fig\Fig6d.eps", replace
 		
 	}
 }

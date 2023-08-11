@@ -2,27 +2,27 @@
 VARIABLES	LABELS	Alesina4
 		
 L.F0pcGDP	Forward 0 year change in pcGDP, percent % = L,	0.00
-		[0.276]
+		[0.273]
 L.F0Far_share	Forward 0 year change in Far_share, pp = L,	0.01
-		[1.405]
+		[1.392]
 L.F0Population	Forward 0 year change in Population, percent % = L,	0.01
-		[0.378]
+		[0.377]
 L.F0EmpAbs	Forward 0 year change in EmpAbs, percent % = L,	0.02
 		[0.812]
 L.F0pwComp	Forward 0 year change in pwComp, percent % = L,	-0.01
-		[-0.507]
+		[-0.506]
 L.F0HHI	Forward 0 year change in HHI, percent % = L,	0.00
-		[0.411]
+		[0.395]
 L.F0pwHours	Forward 0 year change in pwHours, percent % = L,	0.02
-		[1.411]
+		[1.413]
 L.F0LaborShare	Forward 0 year change in LaborShare, percent % = L,	0.01
-		[0.813]
+		[0.812]
 L.F0pcGOV	Forward 0 year change in pcGOV, percent % = L,	0.00
-		[0.408]
+		[0.411]
 L.Alesina4	Alesina4 = L,	0.52***
-		[5.399]
+		[5.397]
 Constant	Constant	-0.15***
-		[-5.012]
+		[-5.008]
 		
 Observations		3,915
 R-squared		0.553

@@ -20,7 +20,7 @@ Nuts_id == "FRY4" | Nuts_id == "FRY5" | Nuts_id == "FR" | Nuts_id == "TR" ///
 local year = 2007 
 spmap Far_share using "${hp}Code\eucoord_shp" ///
 if Nuts_id!="ES63" & Nuts_id!="ES64" & Nuts_id!="PT20" & Nuts_id!="PT30" & Nuts_id!="FI20" & Year == `year' , ///
-id(_ID) fcolor(Oranges) clm(c) clb(0 05 10 15 20 30 40 70) legend(size(medium) position(10)) 
+id(_ID)  clm(c) clb(0 05 10 15 20 30 40 70) legend(size(medium) position(10)) 
 graph export "$Fig\Fig2a.eps", replace	
 *graph export "$Fig\Fig2a.pdf", replace	
 
@@ -28,6 +28,6 @@ graph export "$Fig\Fig2a.eps", replace
 local year = 2015 
 spmap Far_share using "${hp}Code\eucoord_shp" ///
 if Nuts_id!="ES63" & Nuts_id!="ES64" & Nuts_id!="PT20" & Nuts_id!="PT30" & Nuts_id!="FI20" & Year == `year' , ///
-id(_ID) fcolor(Oranges) clm(c) clb(0 05 10 15 20 30 40 70) legend(size(medium) position(10)) 
+id(_ID)  clm(c) clb(0 05 10 15 20 30 40 70) legend(size(medium) position(10)) 
 graph export "$Fig\Fig2b.eps", replace	
 *graph export "$Fig\Fig2b.pdf", replace	

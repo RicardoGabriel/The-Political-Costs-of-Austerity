@@ -1,34 +1,14 @@
-				*** 8_Tab2.do ***
-
-*Baseline 
+*Baseline
 do Tab2_0
 
-* (1) Unexpected component 
+*Panel A: recessions vs expansions
 do Tab2_1
 
-* (2) Unpredicted Austerity 
+*Panel B: urban vs rural
 do Tab2_2
 
-* (3) Drop GR
+*Panel C: poor vs rich
 do Tab2_3
 
-* (4) DK se
+*Panel D: left vs right austerity implementer (far share response)
 do Tab2_4
-
-* (5) Including Time FE (now maybe time * region)
-do Tab2_5
-
-* (6) Lagged sit
-do Tab2_6
-
-* (7) IMF austerity shock
-do Tab2_7
-
-* (8) Excluding capitals
-do Tab2_8
-
-* (9) Excluding region in top share
-do Tab2_9
-
-* (10) Express dependent variable relative to country
-do Tab2_10

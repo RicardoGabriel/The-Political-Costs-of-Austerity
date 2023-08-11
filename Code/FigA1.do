@@ -23,16 +23,7 @@ eststo clear
 * One can do the same exercise for Nuts0 easily and for other variables such as far vote share, and gov. spending
 ********************************************************************************
 
-use "${hp}Data\Out\Real\Data_Real.dta", clear
-
-* drop outlier and region without election data
-* french islands extra regio
-* Ceuta e Melilla, due to strong variations in gov spending change
-* drop Aland in FInland due to lack of consistent voting data
-drop if Nuts_id=="FRY1" |  Nuts_id=="FRY2" |  Nuts_id=="FRY3" |  Nuts_id=="FRY4" |  Nuts_id=="FRY5" | Nuts_id=="ES63" | Nuts_id=="ES64" | Nuts_id=="FI20"
-
-* keep level of interest
-keep if Nuts==1 | Nuts==2
+use "${hp}Data\Out\Real\Data_Analysis_Nuts1.dta", clear
 
 * for exposure purposes scale the instrument
 replace Alesina4 = Alesina4*(-100)
@@ -134,7 +125,7 @@ gen Nuts1_id = substr(Nuts_id,1,3) if Nuts==2
 * repeat variables of interest to a column with Nuts1 values for each Nuts2
 gen Far = Far_Left + Far_Right
 bys Nuts1_id Year: egen Far_Nuts1 = total(Far)
-bys Nuts1_id Year: egen Votes_Nuts1 = total(Votes)
+bys Nuts1_id Year: egen Votes_Nuts1 = total(Valid)
 gen Far_share_Nuts1 = Far_Nuts1 / Votes_Nuts1
 
 xtset id Year

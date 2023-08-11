@@ -1,10 +1,10 @@
 						*** Master.do ***
  
 *Authors: Ricardo Duque Gabriel, Mathias Klein, and Ana Sofia Pessoa
-*Start Date: 12/04/2020
-*Last Update: 08/08/2023
+*Start Date: 04/12/2020
+*Last Update: 08/10/2023
 *Recommended Stata version: 15
-*Estimated running time: ~15 minutes
+*Estimated running time: ~10 minutes
 
 clear all
 set more off
@@ -22,9 +22,12 @@ do Paths
 *Choose Nuts level to perform the analysis on
 global nu = 2
 
-*Choose main instrument (IMF or Alesina1-4)
+*Choose main instrument (Alesina4) - alternative instruments are (IMF, Alesina5, Alesina4_unpredict for Rob Table C3)
 global inst Alesina4
-	
+
+*Clean data and produce key datasets
+do Preamble
+
 ********************************************************************************
 * Producing Figures
 ********************************************************************************
@@ -38,7 +41,7 @@ do Fig2
 *Figure 3
 do Fig3
 
-*Figure 4 (and Figure 7a)
+*Figure 4 (and Figure 6d)
 do Fig4	
 
 *Figure 5 	
@@ -47,14 +50,11 @@ do Fig5
 *Figure 6
 do Fig6
 
-*Figure 7 (7b and 7c)
+*Figure 7
 do Fig7
 	
 *Figure 8
 do Fig8
-
-*Figure 9	
-do Fig9
 
 *Figure A1 (and Table A6)
 do FigA1
@@ -75,12 +75,9 @@ do FigD1
 
 *Table 1
 do Tab1
- 
-*Table 2
-do Tab2
 	
-*Table 3 (and Figure B2 on Tab3_4.do)
-do Tab3
+*Table 2 (and Figure B2 on Tab2_4.do)
+do Tab2
 	
 *Table A3
 do TabA3
@@ -99,3 +96,6 @@ do TabC3
 
 * Table C4
 do TabC4
+
+* Table C5
+do TabC5

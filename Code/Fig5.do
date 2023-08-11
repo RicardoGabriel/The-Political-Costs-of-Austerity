@@ -24,9 +24,6 @@ local lhsvarlist Turnout Far Fragmentation
 egen Far 	= rowtotal(Far_Right Far_Left)	
 replace Far = Far/EligibleVoters
 
-* gen Turnout variable
-cap gen Turnout = Votes / EligibleVoters
-
 *fragmentation
 gen Fragmentation = 1-HHI
 
