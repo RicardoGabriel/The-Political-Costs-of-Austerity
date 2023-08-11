@@ -1,0 +1,8 @@
+#Ignore data files
+
+# example folder
+Data
+
+
+# example name regardless of directory or file type
+**/Moment*

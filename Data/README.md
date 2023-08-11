@@ -10,12 +10,13 @@ Folder [Data](https://github.com/RicardoGabriel/The-Political-Costs-of-Austerity
 
 	3.1 Out\Elections -  here we have only the election data. It is aggregated at the year-regional level which adds the number of votes in case there was more than one election in a given year (Data_Elections). But it can also be found disaggregated by type of election (European, National, and Regional). More information about the election types, assumptions, and data sources can be found in the paper's appendix.
 
-	3.2 Out\Real - here we have all the real data. Excel file "Alesina" comes from the work by Alesina, Favero, and Giavazzi (2019) on which we add one excel sheet performing different types of aggregation that are the basis of our shift part of the instrument. "Data_IMFShocks_Klein" comes from Guajardo et al. (2014) series which was updated by Klein (2017). "Data_Real" comes from our previous work Gabriel, Klein, and Pessoa (2023) that mostly collects data from ARDECO, Eurostat, Cambridge Econometrics, and OECD. Finally, Data_Analysis_Nuts0-2 aggregates some of this information to the National, Nuts1, and Nuts2 level. If you use this information, please acknowledge these sources.
+	3.2 Out\Real - here we have all the real data. Excel file "Alesina" comes from the work by Alesina, Favero, and Giavazzi (2020) on which we add one excel sheet performing different types of aggregation that are the basis of our shift part of the instrument. "Data_IMFShocks_Klein" comes from Guajardo et al. (2014) series which was updated by Klein (2017). "Data_Real" comes from our previous work Gabriel, Klein, and Pessoa (2023) that mostly collects data from ARDECO, Eurostat, Cambridge Econometrics, and OECD. Finally, Data_Analysis_Nuts0-2 aggregates some of this information to the National, Nuts1, and Nuts2 level. If you use this information, please acknowledge these sources.
 
 
 References:
 
-Alesina, A., C. Favero, and F. Giavazzi (2019). Effects of austerity: Expenditure-and tax-based approaches. Journal of Economic Perspectives 33(2), 141–62.
+Alesina, A., C. Favero, and F. Giavazzi (2020). Austerity: When it Works and when it Doesn’t.
+Princeton University Press. Link: https://igier.unibocconi.eu/research/datasets/fiscal-adjustment-plans/database-fiscal-adjustment-plans
 
 Algan, Y., S. Guriev, E. Papaioannou, and E. Passari (2017). The european trust crisis and the rise of populism. Brookings Papers on Economic Activity 2017(2), 309–400.
 
