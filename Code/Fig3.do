@@ -130,7 +130,7 @@ foreach lhsvar in `lhsrealvarlist' {
 		graphregion(color(white)) plotregion(color(white)) legend(off)		
 		
 		graph export "$Fig\Fig3.eps", replace
-
+		graph export "$Fig\Fig3.pdf", replace
 	
 }
 

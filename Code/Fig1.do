@@ -50,3 +50,4 @@ legend(order(4 "Vote share far right, %" ///
 3 "Average vote share far parties, %" 5 "Vote share far left, %" ///
 1 "Episodes of extreme austerity") cols(2))
 graph export "$Fig\Fig1.pdf", replace
+graph export "$Fig\Fig1.eps", replace

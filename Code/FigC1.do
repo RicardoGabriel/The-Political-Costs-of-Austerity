@@ -37,6 +37,7 @@ twoway (bar `inst1' Year, fcolor(gs13) lwidth(none) xlabel(1980(5)2015)) ///
 (line zero Year, lcolor(black)), ///
 ytitle("Austerity (% of GDP)") title(" `country' ") ylabel(-1(1)4) legend (off) scale(1.65)
 graph export "$Fig\IMF_`country'.eps", replace
+graph export "$Fig\IMF_`country'.pdf", replace
 
 
 restore

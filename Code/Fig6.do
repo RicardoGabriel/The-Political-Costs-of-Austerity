@@ -146,12 +146,15 @@ forvalues x =1/3 {
 		
 		if `x' == 1 {
 			graph export "$Fig\Fig6a.eps", replace
+			graph export "$Fig\Fig6a.pdf", replace
 		}
 		else if `x' == 2 {
 			graph export "$Fig\Fig6b.eps", replace
+			graph export "$Fig\Fig6b.pdf", replace
 		}
 		else if `x' == 3 {
 			graph export "$Fig\Fig6c.eps", replace
+			graph export "$Fig\Fig6c.pdf", replace
 		}
 	}
 	
@@ -304,9 +307,11 @@ foreach lhsvar in `lhsvarlist' `lhsvarlistp'  {/*LHS variable: `lhsvarlist' */
 		
 		if "`lhsvar'" == "Far_Left_share" {
 			graph export "$Fig\Fig6e.eps", replace
+			graph export "$Fig\Fig6e.pdf", replace
 		}
 		else if "`lhsvar'" == "Far_Right_share" {
 			graph export "$Fig\Fig6f.eps", replace
+			graph export "$Fig\Fig6f.pdf", replace
 		}
 
 		

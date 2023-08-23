@@ -133,9 +133,12 @@ foreach lhsvar in `lhsrealvarlist' {
 		
 		if "`lhsvar'" == "pcGDP" {
 			graph export "$Fig\FigD1a.eps", replace
+			graph export "$Fig\FigD1a.pdf", replace
+
 		}
 		else if "`lhsvar'" == "Emp" {
 			graph export "$Fig\FigD1b.eps", replace
+			graph export "$Fig\FigD1b.pdf", replace
 		}
 	}
 }

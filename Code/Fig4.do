@@ -126,6 +126,8 @@ foreach lhsvar in `lhsvarlist'   {/*LHS variable: `lhsvarlist' */
 
 		graph export "$Fig\Fig4.eps", replace
 		graph export "$Fig\Fig6d.eps", replace
+		graph export "$Fig\Fig4.pdf", replace
+		graph export "$Fig\Fig6d.pdf", replace
 		
 	}
 }

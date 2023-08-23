@@ -25,5 +25,5 @@ scalar m = r(min)
 spmap fracmil2 using "${hp}Code\eucoord_shp" if Nuts_id != "PT", ///
 id(_ID) fcolor(Blues2) clm(c) clb(0.72 0.86 0.92 1.03 1.57) legend(size(medium) position(10)) 
  
-*graph export "$Descriptives\NUTS2_si.pdf", replace	
 graph export "$Descriptives\FigC2.eps", replace	
+graph export "$Descriptives\FigC2.pdf", replace	

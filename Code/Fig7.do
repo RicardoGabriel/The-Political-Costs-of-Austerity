@@ -144,21 +144,27 @@ foreach lhsvar in `lhsrealvarlist' {
 	*save figures
 	if "`lhsvar'" == "pcGDP" {
 		graph export "$Fig\Fig7a.eps", replace
+		graph export "$Fig\Fig7a.pdf", replace
 	}
 	else if "`lhsvar'" == "Emp" {
 		graph export "$Fig\Fig7b.eps", replace
+		graph export "$Fig\Fig7b.pdf", replace
 	}
 	else if "`lhsvar'" == "pcInv" {
 		graph export "$Fig\Fig7c.eps", replace
+		graph export "$Fig\Fig7c.pdf", replace
 	}
 	else if "`lhsvar'" == "pcVehicles" {
 		graph export "$Fig\Fig7d.eps", replace
+		graph export "$Fig\Fig7d.pdf", replace
 	}
 	else if "`lhsvar'" == "Comp" {
 		graph export "$Fig\Fig7e.eps", replace
+		graph export "$Fig\Fig7e.pdf", replace
 	}
 	else if "`lhsvar'" == "LaborShare" {
 		graph export "$Fig\Fig7f.eps", replace
+		graph export "$Fig\Fig7f.pdf", replace
 	}
 	
 }

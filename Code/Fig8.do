@@ -277,6 +277,7 @@ foreach lhsvar in `lhsvarlist' `lhstrust' {/*LHS variable*/
 		plotregion(color(white)) legend(off)
 		
 		graph export "$Fig\Fig8a.eps", replace
+		graph export "$Fig\Fig8a.pdf", replace
 		
 		twoway (rarea up_`lhsvar'_r_w_a_d dn_`lhsvar'_r_w_a_d periods, fcolor(gs12) lcolor(white) lpattern(solid))  ///
 		(rarea up2_`lhsvar'_r_w_a_d dn2_`lhsvar'_r_w_a_d periods, fcolor(gs10) lcolor(white) lpattern(solid))  ///
@@ -286,6 +287,7 @@ foreach lhsvar in `lhsvarlist' `lhstrust' {/*LHS variable*/
 		plotregion(color(white)) legend(off)
 		
 		graph export "$Fig\Fig8b.eps", replace
+		graph export "$Fig\Fig8b.pdf", replace
 		
 	}
 	else if "`lhsvar'" == "Trust"  {
@@ -297,6 +299,7 @@ foreach lhsvar in `lhsvarlist' `lhstrust' {/*LHS variable*/
 		plotregion(color(white)) legend(off)
 		
 		graph export "$Fig\Fig8c.eps", replace
+		graph export "$Fig\Fig8c.pdf", replace
 		
 		twoway (rarea up_`lhsvar'_r_w_a_d dn_`lhsvar'_r_w_a_d periods, fcolor(gs12) lcolor(white) lpattern(solid))  ///
 		(rarea up2_`lhsvar'_r_w_a_d dn2_`lhsvar'_r_w_a_d periods, fcolor(gs10) lcolor(white) lpattern(solid))  ///
@@ -306,7 +309,7 @@ foreach lhsvar in `lhsvarlist' `lhstrust' {/*LHS variable*/
 		plotregion(color(white)) legend(off)
 		
 		graph export "$Fig\Fig8d.eps", replace
-		
+		graph export "$Fig\Fig8d.pdf", replace
 	}
 
 

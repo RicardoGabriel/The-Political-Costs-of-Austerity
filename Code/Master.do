@@ -78,7 +78,7 @@ do Tab1
 	
 *Table 2 (and Figure B2 on Tab2_4.do)
 do Tab2
-	
+	/*
 *Table A3
 do TabA3
 

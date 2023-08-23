@@ -231,3 +231,4 @@ heatplot metric Country Year if `subsample'  ///
 	note(`note') ///
 	name(histor_`=subinstr("`metric'",".","",.)',replace)
 graph export "$Fig\FigB2.eps", replace
+graph export "$Fig\FigB2.pdf", replace

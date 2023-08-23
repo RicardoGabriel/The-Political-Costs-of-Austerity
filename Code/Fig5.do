@@ -134,12 +134,15 @@ foreach lhsvar in `lhsvarlist'  {
 		
 		if "`lhsvar'" == "Turnout" {
 			graph export "$Fig\Fig5a.eps", replace
+			graph export "$Fig\Fig5a.pdf", replace
 		}
 		else if "`lhsvar'" == "Far" {
 			graph export "$Fig\Fig5b.eps", replace
+			graph export "$Fig\Fig5b.pdf", replace
 		}
 		else if "`lhsvar'" == "Fragmentation" {
 			graph export "$Fig\Fig5c.eps", replace
+			graph export "$Fig\Fig5c.pdf", replace
 		}		
 	
 	

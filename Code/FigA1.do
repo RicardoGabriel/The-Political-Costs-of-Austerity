@@ -62,6 +62,8 @@ replace Alesina4_dif = abs(Alesina4_dif)
 *drop if Nuts_id[_n+1]==Nuts_id[_n]
 hist Alesina4_dif if Alesina4!=0, width(0.02) xtitle("Instrument") scale(2)
 graph export "$Fig\FigA1a.eps", replace
+graph export "$Fig\FigA1a.pdf", replace
+
 reg Alesina4_dif if Alesina4 !=0
 outreg2 using $Tab\TableA6.xls, tstat bracket e(N_full) label excel bdec(2) replace
 
@@ -143,6 +145,7 @@ hist F0Far_share_dif
 replace F0Far_share_dif = abs(F0Far_share_dif)
 hist F0Far_share_dif, width(0.5) xtitle("Far vote share (p.p.)") scale(2)
 graph export "$Fig\FigA1b.eps", replace
+graph export "$Fig\FigA1b.pdf", replace
 reg F0Far_share_dif
 outreg2 using $Tab/TableA6.xls, tstat bracket e(N_full) label excel bdec(2)
 
@@ -181,6 +184,7 @@ hist F0pcGOV_dif
 replace F0pcGOV_dif = abs(F0pcGOV_dif)
 hist F0pcGOV_dif, width(1) xtitle("Gov. spending growth (%)") scale(2)
 graph export "$Fig\FigA1c.eps", replace
+graph export "$Fig\FigA1c.pdf", replace
 reg F0pcGOV_dif
 outreg2 using $Tab/TableA6.xls, tstat bracket e(N_full) label excel bdec(2)
 
