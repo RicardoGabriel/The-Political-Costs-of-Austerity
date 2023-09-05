@@ -2,7 +2,7 @@
 
 The entire workflow from this project including all the codes, data, outputs, and documentation can be found here.
 
-Folder [Data](https://github.com/RicardoGabriel/The-Political-Costs-of-Austerity/tree/main/Data) stores all data (which is temporarily missing due to publication process).
+Folder [Data](https://github.com/RicardoGabriel/The-Political-Costs-of-Austerity/tree/main/Data) stores all data.
 
 Folder [Code](https://github.com/RicardoGabriel/The-Political-Costs-of-Austerity/tree/main/Code) stores all Stata codes used to produce the figures and tables in the paper.
 
